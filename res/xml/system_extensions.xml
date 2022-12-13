@@ -35,6 +35,17 @@
         android:summary="@string/hosts_block_summary"
         android:defaultValue="false" />
 
+     <PreferenceCategory
+        android:key="developer_options_category"
+        android:title="@string/developer_options_category">
+
+     <com.aicp.gear.preferences.SecureSettingSwitchPreference
+            android:key="window_ignore_secure"
+            android:title="@string/ignore_window_secure_title"
+            android:summary="@string/ignore_window_secure_summary"
+            android:defaultValue="false"/>
+   </PreferenceCategory>
+
 <!--
     <com.aicp.extras.preference.SystemSettingMasterSwitchPreference
         android:key="enable_app_circle_bar"
